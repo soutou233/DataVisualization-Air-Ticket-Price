@@ -1,0 +1,104 @@
+#map {
+  align-items: center;
+  border:1px solid gray;
+  border-radius:10px;
+  height:700px;
+  width:1200px;
+  margin:5px;
+}
+
+#visual1, #visual2 {
+  border:1px solid gray;
+  border-radius:10px;
+  height:350px;
+  width:600px;
+  margin:5px;
+}
+
+#wrapper {
+  margin:auto;
+  width:1440px;
+}
+
+p {
+  font-size: 20px;
+}
+
+select {
+  width: 25%;
+  font-size: 25px;
+}
+
+.visualizations-map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.visualizations-chart, h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#div1 {
+  position: relative;
+  left: 660px;
+  font-size: 25px;
+  margin: 10px 10px -10px -10px;
+}
+
+#div2 {
+  display: none;
+  position: relative;
+  left: 750px;
+  font-size: 25px;
+}
+
+input {
+  width:60px;
+  height: 30px;
+  font-size: 20px;
+}
+
+html {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.countrymap {
+  stroke: black;
+}
+
+h2, h3 {
+  text-align:center;
+}
+
+.selectedmap {
+    stroke: cyan;
+    stroke-width: 4;
+}
+
+.colorLegend text {
+    font-size: .9em;
+}
+
+.colorLegend line {
+    stroke: white;
+}
+
+.colorLegend .domain {
+    stroke: none;
+}
+
+div.tooltip, div.tooltip2 {	
+  position: absolute;
+     text-align: center;
+     padding: .5rem;
+     background: #FFFFFF;
+     color: #313639;
+     border: 1px solid #313639;
+     border-radius: 8px;
+     pointer-events: none;
+     font-size: 1.3rem;		
+}
+
+
+

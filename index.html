@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>CSE 494 / Fall 2021 / Group Project</title>
+    <link rel='stylesheet' href='css/styles.css'>
+    <script src='https://d3js.org/d3.v5.min.js'></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script src='scripts/project.js'></script>
+
+</head>
+
+<body>
+    <div id='wrapper'>
+        <h2>CSE - 494 Group Project</h2>
+        <h3>Arnav Jagannath Aghav, Yuqian Zhuang, Zichen Wang</h3>
+        <hr style='width:100%'>
+        <h1>Factors Affecting Air Ticket Prices</h1>
+        <p>In this project, we aim to gain a deeper understanding of the factors that influence how flights are priced. In this area of price optimization, we analyze various types of alternative data that causes or co-relates with the coinciding rise/fall in intrinsic pricing of airfares. </p>
+        <div id="div1">&nbsp;Year:&nbsp;
+            <input id='year-input' type='number' value='2000' onchange='checkYear(); clearSvg(); drawMap();' />
+            &nbsp;
+        </div>
+
+        <br />
+        <div class='visualizations-map'>
+            <svg id='map'></svg>
+            <br>
+        </div>
+        <div class="visual2-select" id="div2">
+            Influence Factors:
+            <select id="second-select" onchange="drawBarChart();">
+                <option value="JetFuelPrice">Jet Fuel Price</value>
+                <option value="NASDAQ">NASDAQ Annual % Change</value>
+            </select>
+        </div>
+
+        <div class="visualizations-chart">
+            <svg id='visual1'></svg>
+            <svg id='visual2'></svg>
+
+        </div>
+        <br>
+        Source: <a href='https://www.transtats.bts.gov/AverageFare/' target='_blank'>Bureau of Transportation
+            Statistics</a>, <a href='https://www.macrotrends.net/1320/nasdaq-historical-chart'
+            target='_blank'>Macrotrends</a>, <a
+            href='https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=EER_EPJK_PF4_RGC_DPG&f=M'
+            target='_blank'>U.S. Energy Information Adminisration</a>
+        <br />
+    </div>
+</body>
+
+</html>
